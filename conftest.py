@@ -3,8 +3,8 @@ import pytest
 
 def pytest_sessionstart(session):
     """Hook to set the autograder module reference globally."""
-    import autograder  # Import your autograder.py file
-    session.config._autograder_module = autograder  # Set it in the config object
+    import autograder 
+    session.config._autograder_module = autograder  
 
 
 def pytest_runtest_makereport(item, call):
